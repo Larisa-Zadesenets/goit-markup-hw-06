@@ -371,8 +371,10 @@
     <div class="footer-shell">
         <h3 class="footer-title">Підпишіться на розсилку</h3>
         <form class="footer-form">
-            <input type="email" name="user_email" class="footer-form-input" placeholder="E-mail">
-            <button type="submit" class="footer-form-submit">Підписатися
+            <label class="footer-form-field" for="user_email"></label> 
+            <input type="email" name="user_email" id="user_email" class="footer-form-input"
+            required placeholder="E-mail">
+                <button type="submit" class="footer-form-submit">Підписатися
                 <svg class="icon-send" width="24" height="24" >
                     <use href="./images/icons.svg#icon-send"></use>
                 </svg>
@@ -383,13 +385,13 @@
     </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="button-modal" type="button" data-modal-close>
-            <svg class="icon-close" width="30" height="30">
-            <use href="./images/icons.svg#close"></use>
+        <button class="modal-button" type="button" data-modal-close>
+            <svg class="icon-close" width="11" height="11">
+            <use class="icon-close" href="./images/icons.svg#close"></use>
             </svg>
         </button>
         <form class="modal-form" >
-        <span class="feedback-form">Залиште свої дані, ми вам передзвонимо</span>
+        <h2 class="feedback-form">Залиште свої дані, ми вам передзвонимо</h2>
             <label class="modal-form-field"> 
                 <span class="modal-form-desc">Ім'я</span>
                 <span class="modal-form-wrapper">   
