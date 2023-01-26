@@ -72,15 +72,10 @@ body {
 .link-tel:focus{
     color: var(--accent-color); 
 }
-
 .link.current {
     position: relative;
     color: var(--accent-color);
   }
-.site-nav-list .current {
-    color: var(--accent-color);  
-}
-
 .link.current:after {
     content: "";
     position: absolute;
@@ -132,7 +127,7 @@ img {
     border:1px solid var(--header-border);
     }
 /*--------------site nav--------------*/
-.site-nav-list .link {
+.link {
     padding: 32px 0;
     color: var(--title-text-color) ;
     }
