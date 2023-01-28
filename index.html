@@ -392,7 +392,8 @@
         </button>
         <form class="modal-form" >
         <h2 class="feedback-form">Залиште свої дані, ми вам передзвонимо</h2>
-            <label class="modal-form-field"> 
+        <div class="modal-form-field">    
+            <label> 
                 <span class="modal-form-desc">Ім'я</span>
                 <span class="modal-form-wrapper">   
                 <input type="text" name="user_name" class="modal-form-input" 
@@ -402,7 +403,9 @@
                 </svg>
                 </span>
             </label>
-            <label class="modal-form-field"> 
+        </div> 
+        <div class="modal-form-field">  
+            <label> 
                 <span class="modal-form-desc">Телефон</span>
                 <span class="modal-form-wrapper"> 
                 <input type="tel" name="user_phone" class="modal-form-input" 
@@ -413,7 +416,9 @@
                 </svg>
                 </span>
             </label>
-            <label class="modal-form-field">
+        </div>
+        <div class="modal-form-field">
+            <label>
                 <span class="modal-form-desc">Пошта</span>
                 <span class="modal-form-wrapper"> 
                 <input type="email" name="user_email" class="modal-form-input">
@@ -422,10 +427,13 @@
                 </svg>
                 </span>
             </label> 
-            <label class="modal-form-field">   
+        </div>
+        <div class="modal-form-comment">
+            <label>   
                 <span class="modal-form-desc">Коментар</span>
                 <textarea name="user_message" class="modal-form-message"placeholder="Введіть текст"></textarea>
             </label> 
+        </div>
                 <input id="accept-terms" type="checkbox" name="accept-terms" class="modal-form-check visually-hidden">
                 <label for="accept-terms" class="modal-form-check-desc">Погоджуюся з розсилкою та приймаю &nbsp;<a href="" class="link-form">Умови договору</a>
                 </label>

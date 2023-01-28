@@ -719,8 +719,6 @@ img {
 .modal-form-wrapper {
     display: block;
     position: relative;
-    margin-bottom: 10px;
-     
 }
 .form-field-icon {
     position: absolute;
@@ -759,8 +757,10 @@ img {
     cursor: pointer;
     border-radius: 2px;
 }
+
 .modal-form-check:checked + .modal-form-check-desc::before {
 background-image: url(../images/icon-check.svg);
+
 border-color: transparent;
 transition: fill var(--transition-func);
 }
