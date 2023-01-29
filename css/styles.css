@@ -706,7 +706,6 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
-   
     transition: border-color var(--transition-func);
 }
 .modal-form-input:focus {
@@ -728,6 +727,7 @@ img {
     transition: fill var(--transition-func);
 }
 .modal-form-message {
+    display: block;
     resize: none;
     width: 100%;
     height: 120px;
@@ -760,9 +760,10 @@ img {
 
 .modal-form-check:checked + .modal-form-check-desc::before {
 background-image: url(../images/icon-check.svg);
-
+background-size: contain;
+background-origin: border-box;
 border-color: transparent;
-transition: fill var(--transition-func);
+transition: transform var(--transition-func);
 }
 .modal-form-check:focus + .modal-form-check-desc::before {
 outline: var(--accent-color);
